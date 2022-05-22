@@ -1,0 +1,27 @@
+.title {
+    color: azure;
+    font-family: 'Cantarell';
+    font-size: 39px;
+    font-weight: 700;
+}
+.contact {
+        color: azure;
+        font-family: 'Cantarell';
+        font-size: 25px;
+        font-weight: 700;
+}
+.text {
+    color: azure;
+    font-family: 'Cantarell';
+    font-size: 18px;
+    
+}
+.sectionList {
+    display: flex;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

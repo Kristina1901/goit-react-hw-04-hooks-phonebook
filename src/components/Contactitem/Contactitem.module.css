@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    display: flex;
+    text-decoration: none;
+    
+}
+.text {
+    margin-right: 10px;
+    color: azure;
+    font-family: 'Cantarell';
+    font-size: 19px;
+}
+.number {
+        color: azure;
+        font-family: 'Cantarell';
+        font-size: 19px;
+}
+.button {
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    border-radius: 10%;
+    border: #f7797d;
+    color: azure;
+    font-family: 'Cantarell';
+    font-size: 15px;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+
+.button:focus {
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
