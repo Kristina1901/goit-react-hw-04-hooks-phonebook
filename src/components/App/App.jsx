@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Section from '../Section/Section';
 import Container from '../Container/Container';
@@ -8,8 +8,14 @@ import ContactList from '../ContacList/ContactList';
 import s from '../App/App.module.css';
 
 const App = () => {
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState(
+    JSON.parse(localStorage.getItem('contacts')) ?? []
+  );
   const [filter, setFilter] = useState('');
+
+  useEffect(() => {
+    localStorage.setItem('contacts', JSON.stringify(contacts));
+  }, [contacts]);
   const repeatCheck = newName => {
     return contacts.find(({ name }) => name.toLowerCase() === newName);
   };
